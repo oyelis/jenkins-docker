@@ -1,0 +1,2 @@
+docker build -t jenkins/jenkins-docker .
+docker container run -d -p 8080:8080 -v /data/jenkins_docker2/:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock --name jenkins-docker jenkins/jenkins-docker
